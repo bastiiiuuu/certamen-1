@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLORES */
+:root {
+  --negro: #0d0d0d;
+  --negro-suave: #1a1a1a;
+  --gris: #2a2a2a;
+  --blanco: #ffffff;
+  --dorado: #c9a95c;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* NAVBAR */
+.header {
+  background-color: var(--negro);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gris);
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.logo-box {
+  background-color: var(--dorado);
+  color: black;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: var(--dorado);
+}
+
+/* HERO */
+.hero {
+  background: radial-gradient(circle at top, #1a1a1a, #000000);
+  padding: 80px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TEXTO */
+.hero-texto h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-texto p {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+/* FOTO */
+.hero-foto img {
+  width: 220px;
+  border-radius: 50%;
+  border: 2px solid var(--dorado);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+}
