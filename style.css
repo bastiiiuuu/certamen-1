@@ -162,3 +162,35 @@ body {
 .datos li:last-child {
   border-bottom: none;
 }
+
+/* COMMIT 3 */
+.habilidades {
+  padding: 70px 40px;
+  background-color: #0d0d0d;
+  color: white;
+  text-align: center;
+}
+
+.contenedor-habilidades {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skill {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
+
+.skill h3 {
+  color: #c9a95c;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  color: #bbb;
+}
