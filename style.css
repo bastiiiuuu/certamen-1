@@ -164,47 +164,97 @@ body {
 }
 
 /* COMMIT 3 */
+
 .habilidades {
   padding: 70px 40px;
+  text-align: center;
   background-color: #0d0d0d;
   color: white;
-  text-align: center;
 }
 
-.contenedor-habilidades {
+.tabla-habilidades {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.encabezado {
+  font-weight: bold;
+  color: #c9a95c;
+}
+
+/* ICONOS PEQUEÑOS */
+.fila span img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* BARRAS */
+.barra {
+  background-color: #2a2a2a;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progreso {
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* NIVELES */
+.html {
+  width: 60%;
+  background-color: #e44d26;
+}
+
+.css {
+  width: 55%;
+  background-color: #264de4;
+}
+
+.git {
+  width: 50%;
+  background-color: #f1502f;
+}
+
+/* CAJAS INFERIORES */
+.extra-habilidades {
   display: flex;
-  justify-content: center;
   gap: 30px;
-  margin-top: 40px;
+  justify-content: center;
+  margin-top: 50px;
   flex-wrap: wrap;
 }
 
-.skill {
+.box {
   background-color: #1a1a1a;
-  padding: 25px 20px;
-  border-radius: 12px;
-  width: 230px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.05);
-  transition: 0.3s;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
 }
 
-.skill:hover {
-  transform: translateY(-5px);
-}
-
-.skill img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  margin-bottom: 15px;
-}
-
-.skill h3 {
+.box h3 {
   color: #c9a95c;
   margin-bottom: 10px;
 }
 
-.skill p {
+.box ul,
+.box ol {
+  padding-left: 20px;
   color: #bbb;
-  line-height: 1.6;
+}
+
+.box li {
+  margin-bottom: 8px;
 }
