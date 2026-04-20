@@ -176,14 +176,27 @@ body {
   justify-content: center;
   gap: 30px;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .skill {
   background-color: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-  width: 200px;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 230px;
   box-shadow: 0 0 15px rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
 
 .skill h3 {
@@ -193,4 +206,5 @@ body {
 
 .skill p {
   color: #bbb;
+  line-height: 1.6;
 }
