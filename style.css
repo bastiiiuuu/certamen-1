@@ -397,30 +397,52 @@ body {
   background-color: #c9a95c;
 }
 
-/* TEXTO */
-.item-contacto p {
-  color: #ccc;
+/* ========================= */
+/* COMMIT FINAL - FOOTER */
+/* ========================= */
+
+.footer {
+  background-color: #0d0d0d;
+  border-top: 1px solid #2a2a2a;
+  padding: 25px 40px;
+  text-align: center;
+}
+
+.footer-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer p {
+  color: #aaa;
   font-size: 14px;
 }
 
-/* REDES SOCIALES */
+/* REDES */
 .redes {
   display: flex;
-  justify-content: center;
   gap: 15px;
-  margin: 15px 0;
 }
 
+.redes a {
+  text-decoration: none;
+}
+
+/* ICONOS */
 .redes img {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
-  cursor: pointer;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  padding: 5px;
   transition: 0.3s;
 }
 
-/* EFECTO HOVER */
+/* HOVER */
 .redes img:hover {
   transform: scale(1.2);
-  filter: brightness(1.2);
+  box-shadow: 0 0 10px #c9a95c;
 }
