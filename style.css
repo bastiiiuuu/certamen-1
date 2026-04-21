@@ -402,3 +402,25 @@ body {
   color: #ccc;
   font-size: 14px;
 }
+
+/* REDES SOCIALES */
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.redes img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+.redes img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
